@@ -10999,6 +10999,11 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
+vest@^3.1.2:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/vest/-/vest-3.1.2.tgz#674f2b43e37029cbed9a3b67fa545a1c77be6703"
+  integrity sha512-mdiTu28Gl1vrZpLwiNhXzIkfWmuwIfNUsMEXX0sSSk0bSLbAqV7bFIFI9g7jnZYn9AVGXrljFlLmKvMl5BJYpA==
+
 vm-browserify@^1.0.1:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
