@@ -1,0 +1,55 @@
+{{! template-lint-disable no-inline-styles }}
+<form
+  id="basicExampleForm"
+  name="basicExampleForm"
+  autocomplete="off"
+  {{on 'submit' this.onSubmit}}
+>
+  <div>
+    <label for="not-a-username">
+      Username:
+    </label>
+    <input
+      id="not-a-username"
+      type="text"
+      name="text"
+      autocomplete="off"
+      value={{this.username}}
+      {{on 'input' this.onUsernameChange}}
+    />
+    {{#if this.errorMessages.username.length}}
+      <ul>
+        {{#each this.errorMessages.username as |usernameErrorMessage|}}
+          <li style="color: red;">
+            {{usernameErrorMessage}}
+          </li>
+        {{/each}}
+      </ul>
+    {{/if}}
+  </div>
+  <div>
+    <label for="not-a-password">
+      Password:
+    </label>
+    <input
+      id="not-a-password"
+      type="text"
+      name="password"
+      autocomplete="off"
+      value={{this.password}}
+      {{on 'input' this.onPasswordChange}}
+    />
+    {{#if this.errorMessages.password.length}}
+      <ul>
+        {{#each this.errorMessages.password as |passwordErrorMessage|}}
+          <li style="color: red;">
+            {{passwordErrorMessage}}
+          </li>
+        {{/each}}
+      </ul>
+    {{/if}}
+  </div>
+  <button type="submit">
+    Submit
+  </button>
+</form>
